@@ -1,0 +1,178 @@
+/*
+Copyright (c) 2010, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.com/yui/license.html
+version: 3.2.0
+build: 2676
+*/
+/*e
+	TODO will need to remove settings on HTML since we can't namespace it.
+	TODO with the prefix, should I group by selector or property for weight savings?
+*/
+.reset html {
+  color: #000;
+  background: #FFF; }
+.reset body, .reset div, .reset dl, .reset dt, .reset dd, .reset ul, .reset ol, .reset li, .reset h1, .reset h2, .reset h3, .reset h4, .reset h5, .reset h6, .reset pre, .reset code, .reset form, .reset fieldset, .reset legend, .reset input, .reset textarea, .reset p, .reset blockquote, .reset th, .reset td {
+  margin: 0;
+  padding: 0; }
+.reset table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+.reset fieldset, .reset img {
+  border: 0; }
+.reset address, .reset caption, .reset cite, .reset code, .reset dfn, .reset em, .reset strong, .reset th, .reset var {
+  font-style: normal;
+  font-weight: normal; }
+.reset li {
+  list-style: none; }
+.reset caption, .reset th {
+  text-align: left; }
+.reset h1, .reset h2, .reset h3, .reset h4, .reset h5, .reset h6 {
+  font-size: 100%;
+  font-weight: normal; }
+.reset q:before, .reset q:after {
+  content: ''; }
+.reset abbr, .reset acronym {
+  border: 0;
+  font-variant: normal; }
+.reset sup {
+  vertical-align: text-top; }
+.reset sub {
+  vertical-align: text-bottom; }
+.reset input, .reset textarea, .reset select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit; }
+.reset input, .reset textarea, .reset select {
+  *font-size: 100%; }
+.reset legend {
+  color: #000; }
+
+/*
+	TODO remove settings on BODY since we can't namespace it.
+*/
+/*
+	TODO test putting a class on HEAD.
+		- Fails on FF. 
+*/
+/*
+	TODO think about hanlding inheritence differently, maybe letting IE6 fail a bit...
+*/
+/*
+	TODO Figure out where this list-style rule is best set. Hedger has a request to investigate.
+*/
+/* to preserve line-height and selector appearance */
+/*to enable resizing for IE*/
+/*because legend doesn't inherit in IE */
+/*
+Copyright (c) 2010, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.com/yui/license.html
+version: 3.2.0
+build: 2676
+*/
+/* base.css, part of YUI's CSS Foundation */
+.base h1 {
+  /*18px via YUI Fonts CSS foundation*/
+  font-size: 138.5%; }
+.base h2 {
+  /*16px via YUI Fonts CSS foundation*/
+  font-size: 123.1%; }
+.base h3 {
+  /*14px via YUI Fonts CSS foundation*/
+  font-size: 108%; }
+.base h1, .base h2, .base h3 {
+  /* top & bottom margin based on font size */
+  margin: 1em 0; }
+.base h1, .base h2, .base h3, .base h4, .base h5, .base h6, .base strong {
+  /*bringing boldness back to headers and the strong element*/
+  font-weight: bold; }
+.base abbr, .base acronym {
+  /*indicating to users that more info is available */
+  border-bottom: 1px dotted #000;
+  cursor: help; }
+.base em {
+  /*bringing italics back to the em element*/
+  font-style: italic; }
+.base blockquote, .base ul, .base ol, .base dl {
+  /*giving blockquotes and lists room to breath*/
+  margin: 1em; }
+.base ol, .base ul, .base dl {
+  /*bringing lists on to the page with breathing room */
+  margin-left: 2em; }
+.base ol li {
+  /*giving OL's LIs generated numbers*/
+  list-style: decimal outside; }
+.base ul li {
+  /*giving UL's LIs generated disc markers*/
+  list-style: disc outside; }
+.base dl dd {
+  /*providing spacing for definition terms*/
+  margin-left: 1em; }
+.base th, .base td {
+  /*borders and padding to make the table readable*/
+  border: 1px solid #000;
+  padding: .5em; }
+.base th {
+  /*distinguishing table headers from data cells*/
+  font-weight: bold;
+  text-align: center; }
+.base caption {
+  /*coordinated margin to match cell's padding*/
+  margin-bottom: .5em;
+  /*centered so it doesn't blend in to other content*/
+  text-align: center; }
+.base p, .base fieldset, .base table, .base pre {
+  /*so things don't run into each other*/
+  margin-bottom: 1em; }
+.base input[type=text], .base input[type=password] {
+  width: 12.25em;
+  *width: 11.9em; }
+.base textarea {
+  width: 12.25em;
+  *width: 11.9em; }
+
+/* setting a consistent width, 160px; 
+   control of type=file still not possible */
+/*
+Copyright (c) 2010, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.com/yui/license.html
+version: 3.2.0
+build: 2676
+*/
+/**
+ * Percents could work for IE, but for backCompat purposes, we are using keywords.
+ * x-small is for IE6/7 quirks mode.
+ */
+.fonts {
+  font: 13px/1.231 arial, helvetica, clean, sans-serif;
+  *font-size: small;
+  /* for IE */
+  *font: x-small;
+  /* for IE in quirks mode */ }
+  .fonts body {
+    font: 13px/1.231 arial, helvetica, clean, sans-serif;
+    *font-size: small;
+    /* for IE */
+    *font: x-small;
+    /* for IE in quirks mode */ }
+  .fonts select, .fonts input, .fonts button, .fonts textarea {
+    font: 99% arial,helvetica,clean,sans-serif; }
+  .fonts table {
+    font-size: inherit;
+    font: 100%; }
+  .fonts pre, .fonts code, .fonts kbd, .fonts samp, .fonts tt {
+    font-family: monospace;
+    *font-size: 108%;
+    line-height: 100%; }
+
+/**
+ * Nudge down to get to 13px equivalent for these form elements
+ */
+/**
+ * To help tables remember to inherit
+ */
+/**
+ * Bump up IE to get to 13px equivalent for these fixed-width elements
+ */
